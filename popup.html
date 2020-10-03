@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<script src="jq.min.js"></script>
+<script src="popup.js"></script>
+<script src="waves.js"></script>
+<link rel="stylesheet" src="style.css">
+<style>
+    body {
+        min-width: 350px;
+        min-height: 44px;
+        font-family: sans-serif;
+        font-style: normal;
+        color: #8f9296;
+        padding: 0px;
+        margin: 0px;
+    }
+    .flex-container{
+       display: flex;
+       flex-wrap: nowrap;
+       background-color: white;
+    }
+    .nav{
+      background-color: white;
+      color: #8f9296;
+      border: 0px;
+      outline:none;
+    }
+    .inpt{
+      resize: none;
+    }
+    #close{
+      color: red;
+      font-size: 15px;
+    }
+    #run{
+      color: #34daed;
+      font-size: 15px;
+    }
+</style>
+</head>
+<body class="bd">
+  <div class="flex-container">
+      <textarea  class="inpt" type="text" id="q" style="min-width: 400px; min-height: 30px; border: 0px; outline: none;" placeholder="code here" spellcheck="false" ></textarea>
+      <p>|</p>&nbsp &nbsp<br /><div align="right" style="align-self: right;"><button class="nav" id="run">👁</button>&nbsp &nbsp<button class="nav" id="close">⤫</button></div>
+  </div>
+
+</body>
+</html>
